@@ -1,0 +1,16 @@
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    background-image: linear-gradient(-180deg, #7ED1E7 0%, #51A9F2 100%);
+}
+
+.h {
+    color: #ffffff;
+}
+
+.p {
+    color: #ffffff;
+}
