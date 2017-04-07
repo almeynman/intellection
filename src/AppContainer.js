@@ -9,17 +9,24 @@ import Header from "./components/Header"
 import Content from "./components/Content"
 import Footer from "./components/Footer"
 import ServerSideStyles from "./components/ServerSideStyles"
+import { ThemeProvider } from 'styled-components'
+
+const theme = {
+  color: 'red',
+};
 
 const AppContainer = (props) => (
-  <Container>
-    <DefaultHeadMeta />
-    <Header />
-    <Content>
-      { props.children }
-    </Content>
-    <Footer />
-    <ServerSideStyles />
-  </Container>
+  <ThemeProvider theme={theme}>
+    <Container>
+      <DefaultHeadMeta />
+      <Header />
+      <Content>
+        { props.children }
+      </Content>
+      <Footer />
+      <ServerSideStyles />
+    </Container>
+  </ThemeProvider>
 )
 
 AppContainer.propTypes = {
