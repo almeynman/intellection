@@ -4,3 +4,11 @@ node_modules
 
 # phenomic build
 dist
+
+# OS X
+.DS_Store*
+
+# Emacs
+*~
+\#*\#
+.\#*
