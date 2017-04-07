@@ -220,6 +220,9 @@ export default (config = {}) => {
       filename: "[name].[hash].js",
     },
 
-    resolve: { extensions: [ ".js", ".json" ] },
+    resolve: {
+      extensions: [ ".js", ".json" ],
+      alias: { "styled-components": "styled-components/lib" }
+    },
   }
 }
